@@ -1,0 +1,106 @@
+/* Mengatur font, margin, padding, line height, dan warna dasar halaman */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Gaya umum untuk header dan footer agar memiliki latar belakang biru dan teks putih */
+header, footer {
+  background-color: #5f86b3;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Mengatur tampilan navbar dengan warna latar biru */
+.navbar {
+  background-color: #5a83b0;
+}
+
+/* Warna dasar link pada navbar */
+.nav-link {
+  color: white;
+}
+
+/* Warna link saat diarahkan (hover) */
+.nav-link:hover {
+  color: #ffe082;
+}
+
+/* Mengatur konten utama agar berada di tengah dengan latar putih dan padding */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 1em;
+  background-color: white;
+}
+
+/* Layout untuk bagian profil menggunakan grid, dua kolom, dan spasi antar elemen */
+.profil {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1em;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+/* Mengatur ukuran dan bentuk gambar pada bagian profil */
+.profil img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Styling untuk gambar galeri agar responsif dan memiliki efek bayangan serta transisi */
+.grid-gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Menghilangkan bullet list dan padding pada daftar kontak */
+.kontak ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Memberikan jarak antar item dalam daftar kontak */
+.kontak li {
+  margin-bottom: 0.5em;
+}
+
+/* Media query untuk membuat tampilan lebih responsif di perangkat kecil */
+@media (max-width: 768px) {
+  /* Mengubah grid profil menjadi satu kolom dan teks menjadi rata */
+  .profil {
+    grid-template-columns: 1fr;
+    text-align: justify;
+  }
+
+  /* Mengatur ukuran maksimal gambar profil dan meletakkannya di tengah */
+  .profil img {
+    max-width: 200px;
+    margin: auto;
+  }
+
+  .custom-navbar {
+  background-color: #5a83b0;
+}
+
+.custom-navbar .nav-link {
+  color: white;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #dcdcdc;
+}
+
+
+}
